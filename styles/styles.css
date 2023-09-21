@@ -1,0 +1,710 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* header {
+    height: 10vh;
+    padding-top: 2vh;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+
+} */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10vw;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2D1D61;
+}
+
+.h2-hero {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #2D1D61;
+}
+
+
+
+.p-hero {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #363049;
+}
+
+.navbar-nav {
+    gap: 30px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #2D1D61;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+#navbarSupportedContent {
+    margin-right: 10vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.hero-section {
+    background-image: url(../img/background2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    scroll-margin-top: 50vh;
+    /* Ajusta este valor según tu diseño */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.container-hero {
+    margin-left: 10vw;
+    margin-top: 30vh;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    background-color: #7951f9;
+    padding: 16px 50px;
+    border: transparent;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn a {
+    color: white;
+}
+
+.btn a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #6646ce;
+}
+
+.animationY {
+    view-timeline: --subjectReveal block;
+    animation-timeline: --subjectReveal;
+    animation-name: scrolly;
+    animation-range: entry 5% cover 55%;
+    animation-fill-mode: both;
+    animation-duration: 1ms;
+    /* Firefox requires this to apply the animation */
+}
+
+@keyframes scrolly {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animationX {
+    view-timeline: --subjectReveal block;
+    animation-timeline: --subjectReveal;
+    animation-name: scrollx;
+    animation-range: entry 5% cover 55%;
+    animation-fill-mode: both;
+    animation-duration: 1ms;
+    /* Firefox requires this to apply the animation */
+}
+
+@keyframes scrollx {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+#about {
+    scroll-margin-top: 50vh;
+    /* Ajusta este valor según tu diseño */
+}
+
+.section-2 {
+    background-image: url(../img/Mask-Group2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-container-section-2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card-section-2 {
+    width: 358px;
+    height: 380px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-section-2:hover {
+    transform: scale(1.08);
+}
+
+.h3-card {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px 0px;
+}
+
+.p-card {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+
+#results {
+    scroll-margin-top: 50vh;
+    /* Ajusta este valor según tu diseño */
+}
+
+#stats {
+    scroll-margin-top: 50vh;
+    /* Ajusta este valor según tu diseño */
+}
+
+#pricing {
+    scroll-margin-top: 50vh;
+    /* Ajusta este valor según tu diseño */
+}
+
+.section-3 {
+
+    width: 100%;
+
+}
+
+
+
+.main-container-section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin: 0 70px;
+}
+
+.text-container-section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-4 {
+    background-image: url(../img/MaskGroup3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.main-container-section-3 {
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.section-5 {
+    background-image: url(../img/background-section-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    width: 100%;
+}
+
+.section-6 {
+    background-image: url(../img/background-contact-us.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.main-container-section-6 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.main-container-section-6 .h2-hero {
+    padding: 70px;
+    text-align: center;
+}
+
+.buton-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.container-boton {
+    background-color: #2e6329;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 35px;
+    right: 30px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+    width: 100px;
+    height: 100px;
+}
+
+.container-boton:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton {
+    width: 100%;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width: 1743px) {
+
+    .main-container-section-3 {
+        gap: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 1365px) {
+
+    .hero-section {
+        margin-left: -200px;
+    }
+
+    .container-hero {
+        margin-left: 250px;
+    }
+
+    .h2-hero {
+        font-size: 40px;
+    }
+
+    .p-hero {
+        font-size: 15px;
+    }
+
+    .hero-section {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .animationY {
+        view-timeline: --subjectReveal block;
+        animation-timeline: --subjectReveal;
+        animation-name: scroll;
+        animation-range: entry 10% cover 50%;
+        animation-fill-mode: both;
+        animation-duration: 1ms;
+        /* Firefox requires this to apply the animation */
+    }
+
+    @keyframes scroll {
+        from {
+            opacity: 0;
+            transform: scaleY(0);
+        }
+
+        to {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+
+    .section-2 {
+        background-image: none;
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .main-container-section-2 {
+        gap: 30px;
+    }
+
+    .img-section-3 {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+
+    .hero-section {
+        margin-left: -200px;
+    }
+
+    .container-hero {
+        margin-left: 250px;
+    }
+
+    .img-section-3 {
+        width: 500px;
+    }
+
+    .img-section-4 {
+        width: 450px;
+    }
+
+    .card-section-2 {
+        padding: 20px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .h3-card {
+        font-size: 17px;
+    }
+
+    .p-card {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hero-section {
+        background-size: 100%;
+        height: 100%;
+    }
+
+    .hero-section .h2-hero {
+        font-size: 35px;
+    }
+
+    .hero-section .p-hero {
+        font-size: 14px;
+    }
+
+    .container-hero {
+        margin: 200px 250px;
+
+    }
+
+    .img-section-3 {
+        width: 450px;
+    }
+
+    .img-section-4 {
+        width: 400px;
+    }
+
+    .img-section-5 {
+        width: 600px;
+    }
+
+    .text-container-section-3 .h2-hero {
+        font-size: 30px;
+    }
+
+    .text-container-section-3 .p-hero {
+        font-size: 13px;
+    }
+
+    .container-boton {
+        width: 70px;
+        height: 70px;
+    }
+
+    .boton {
+        scale: 2;
+        padding-bottom: 5px;
+    }
+
+    .card-section-2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img-card {
+        width: 60px;
+        height: 60px;
+    }
+
+    .h3-card {
+        font-size: 13px;
+        padding: 18px 0px;
+    }
+
+    .p-card {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text-container-section-3 .h2-hero {
+        font-size: 25px;
+    }
+
+    .text-container-section-3 .p-hero {
+        font-size: 12px;
+    }
+
+    .img-section-3 {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .hero-section .h2-hero {
+        font-size: 28px;
+    }
+
+    .hero-section .p-hero {
+        font-size: 12px;
+    }
+
+    .container-hero {
+        margin-top: 100px;
+    }
+
+    .img-section-5 {
+        width: 430px;
+    }
+
+    .card-section-2 {
+        width: 200px;
+        height: 240px;
+
+    }
+
+    .img-card {
+        width: 50px;
+        height: 50px;
+    }
+
+    .h3-card {
+        font-size: 12px;
+        padding: 18px 0px;
+    }
+
+    .p-card {
+        font-size: 9px;
+        padding-bottom: 30px;
+    }
+
+    .img-section-4 {
+        width: 320px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .hero-section {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 100% 500px;
+        height: 400px;
+
+    }
+
+    .container-hero {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0px;
+        flex-direction: column;
+    }
+
+    .container-hero .p-hero {
+        display: none;
+    }
+
+    .container-hero .h2-hero {
+        font-size: 40px;
+        color: #2D1D61;
+    }
+
+    .section-2 {
+        margin: 0;
+        padding: 100px 0px;
+    }
+
+    .card-section-2 {
+        width: 250px;
+        height: 300px;
+    }
+
+    .img-card {
+        width: 60px;
+        height: 60px;
+    }
+
+    .h3-card {
+        font-size: 14px;
+        padding: 18px 0px;
+    }
+
+    .p-card {
+        font-size: 11px;
+    }
+
+    .main-container-section-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-3 {
+        margin: 0;
+        padding-bottom: 90px;
+    }
+
+    .main-container-section-3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .hero-section {
+        background: none;
+        margin-top: 50px;
+    }
+
+    .container-hero {
+        width: 50%;
+        height: 50%;
+    }
+
+    .container-hero .h2-hero {
+        font-size: 50px;
+    }
+
+    .btn {
+
+        font-size: 15px;
+        padding: 13px 40px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    h3 br{
+        display: none;
+    }
+
+    p br {
+        display: none;
+    }
+
+    .main-container-section-6 .h2-hero{
+        font-size: 35px;
+    }
+
+    .main-container-section-6 .h2-hero br{
+        display: none;
+    }
+
+    .container-boton {
+        width: 60px;
+        height: 60px;
+    }
+
+    .boton {
+        scale: 3.4;
+        padding-bottom: 6px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .img-section-3{
+        width: 320px;
+    }
+
+    .img-section-4, .img-section-5{
+        width: 280px;
+    }
+
+}
